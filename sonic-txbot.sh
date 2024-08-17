@@ -70,7 +70,7 @@ const to = web3.Keypair.generate();
         }),
     );
 
-    const txCount = 150;  // 트랜잭션 수를 150으로 변경
+    const txCount = 120;  // 트랜잭션 수를 120으로 변경
     for (let i = 0; i < txCount; i++) {
         try {
             console.log(chalk.yellow(\`Sending transaction \${i + 1}/\${txCount}...\`));
