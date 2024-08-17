@@ -46,7 +46,7 @@ npm install @solana/web3.js chalk bs58
 echo
 echo -e "${BOLD_BLUE}개인키를 입력해야합니다.${NC}"
 echo
-read -p "Solana월렛의 개인키를 입력하세요. 버너지갑을 사용하십세요.: " privkey
+read -p "Solana월렛의 개인키를 입력하세요. 버너지갑을 사용하세요.: " privkey
 echo
 echo -e "${BOLD_BLUE}Node.js 스크립트 파일을 생성합니다.${NC}"
 echo
@@ -84,7 +84,7 @@ const to = web3.Keypair.generate();
             console.error(chalk.red('Transaction failed:'), error);
         }
         console.log("");
-        const randomDelay = Math.floor(Math.random() * 3) + 1;
+        const randomDelay = Math.floor(Math.random() * 5) + 1;
         await new Promise(resolve => setTimeout(resolve, randomDelay * 1000));
     }
     console.log(chalk.green('Transaction loop completed.'));
