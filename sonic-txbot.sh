@@ -44,9 +44,9 @@ echo -e "${BOLD_BLUE}필요한 패키지를 설치합니다.${NC}"
 echo
 npm install @solana/web3.js chalk bs58
 echo
-echo -e "${BOLD_BLUE}개인 키를 입력받습니다.${NC}"
+echo -e "${BOLD_BLUE}개인키를 입력해야합니다.${NC}"
 echo
-read -p "당신의 Solana 지갑 개인 키를 입력하세요: " privkey
+read -p "Solana월렛의 개인키를 입력하세요. 버너지갑을 사용하십세요.: " privkey
 echo
 echo -e "${BOLD_BLUE}Node.js 스크립트 파일을 생성합니다.${NC}"
 echo
