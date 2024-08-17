@@ -55,7 +55,7 @@ import web3 from "@solana/web3.js";
 import chalk from "chalk";
 import bs58 from "bs58";
 
-const connection = new web3.Connection("https://devnet.sonic.game", 'confirmed');
+const connection = new web3.Connection("https://api.testnet.sonic.game", 'confirmed');
 
 const privkey = "$privkey";
 const from = web3.Keypair.fromSecretKey(bs58.decode(privkey));
